@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context="com.example.astro.mystimata.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        app:srcCompat="@drawable/mystimata" />
+
+    <EditText
+        android:id="@+id/enterNim"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_nim"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="NIM"
+        android:textColor="#ffffff"
+        android:inputType="textPersonName"
+        android:textColorHint="#afafaf"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/enterPass"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/enterNim"
+        android:layout_alignStart="@+id/enterNim"
+        android:layout_below="@+id/enterNim"
+        android:layout_marginTop="11dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:fontFamily="cursive"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#afafaf"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/enterPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"
+        android:text="LOGIN"
+        android:textSize="15dp">
+    </Button>
+
+    <TextView
+        android:id="@+id/lupaPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:text="Forget Password ?"
+        android:onClick="forgetPass"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>

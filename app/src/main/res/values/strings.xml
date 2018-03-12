@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MyStimata</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="error_login_msg">Please enter your Password</string>
+    <string name="error_login_msg2">Please enter your NIM</string>
+    <string name="submit_alert">An e-mail has sent to your e-mail</string>
+    <string name="error_submit_msg">Please enter your e-mail address</string>
+    <string name="error_login_msg3">Please enter your NIM and Password</string>
+
+    <string-array name="question">
+        <item>Mengapa saya tidak dapat mengisi KRS ?</item>
+        <item>Mengapa tombol logout tidak berfungsi ?</item>
+        <item>Mengapa aplikasi sering hang ?</item>
+        <item>Caranya login gimana ?</item>
+        <item>Cheat GTA darah kebal apaan woi ?</item>
+        <item>Kenapa KHS saya nilainya jelek ?</item>
+        <item>Bisa hack KHS gak ?</item>
+        <item>Kapan nikah ?</item>
+    </string-array>
+
+    <string name="q1">Mungkin belum waktunya</string>
+    <string name="q2">Mungkin belum login lu nya</string>
+    <string name="q3">Beli HP baru yang lebih bagus</string>
+    <string name="q4">Ini kan lu udah login tong !</string>
+    <string name="q5">HESOYAM</string>
+    <string name="q6">MAKANYA BELAJAR LE !</string>
+    <string name="q7">BISA, PM AJA</string>
+    <string name="q8">BESOK PAGI</string>
+
+    <string-array name="array_smt_khs">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.astro.mystimata.Fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/banner" />
+
+    <ImageButton
+        android:id="@+id/krs"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/banner"
+        android:background="@drawable/krs" />
+
+    <ImageButton
+        android:id="@+id/khs"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/banner"
+        android:layout_toRightOf="@id/krs"
+        android:background="@drawable/khs" />
+
+    <ImageButton
+        android:id="@+id/jadwal"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/banner"
+        android:layout_toRightOf="@id/khs"
+        android:background="@drawable/jadwal" />
+
+    <ImageButton
+        android:id="@+id/sebaran"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/krs"
+        android:background="@drawable/sebaran" />
+
+    <ImageButton
+        android:id="@+id/transkip"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/khs"
+        android:layout_toRightOf="@+id/sebaran"
+        android:background="@drawable/transkip" />
+
+    <ImageButton
+        android:id="@+id/dosenWali"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/khs"
+        android:layout_toRightOf="@+id/transkip"
+        android:background="@drawable/dosenwali" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="53dp"
+            android:background="@color/colorPrimaryDark"></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="MySTIMATA v1.0.0"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/copyright"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_below="@id/footer"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@id/footer1"
+                android:src="@drawable/ic_action_copyright" />
+
+            <TextView
+                android:id="@+id/footer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/footer"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Bolognice 2018"
+                android:textColor="#0bf1d6"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
