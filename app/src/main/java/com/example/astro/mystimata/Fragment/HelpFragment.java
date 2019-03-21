@@ -41,7 +41,7 @@ public class HelpFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_help, container, false);
 
 
-        FloatingActionButton ask = (FloatingActionButton) view.findViewById(R.id.ask);
+        FloatingActionButton ask = view.findViewById(R.id.ask);
         ask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

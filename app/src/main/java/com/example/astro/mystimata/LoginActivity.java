@@ -24,31 +24,25 @@ public class LoginActivity extends AppCompatActivity {
         mlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!mnim.getText().toString().isEmpty() && mpass.getText().toString().isEmpty()) {
-                    Toast.makeText(LoginActivity.this,
-                            R.string.error_login_msg, Toast.LENGTH_SHORT).show();
-                }else if (mnim.getText().toString().isEmpty() && !mpass.getText().toString().isEmpty()) {
-                    Toast.makeText(LoginActivity.this,
-                            R.string.error_login_msg2, Toast.LENGTH_SHORT).show();
-                }else if (mnim.getText().toString().isEmpty() && mpass.getText().toString().isEmpty()) {
-                    Toast.makeText(LoginActivity.this,
-                            R.string.error_login_msg3, Toast.LENGTH_SHORT).show();
-                }else if (mnim.getText().toString().equalsIgnoreCase("admin") && mpass.getText().toString().equalsIgnoreCase("admin")) {
+                if(mnim.getText().toString().isEmpty() && mpass.getText().toString().isEmpty()) {
+                    mnim.setError("NIM tidak boleh kosong");
+                    mpass.setError("Password tidak boleh kosong");
+                }else if (mnim.getText().toString().isEmpty()){
+                    mnim.setError("NIM tidak boleh kosong");
+                }else if (mpass.getText().toString().isEmpty()){
+                    mpass.setError("Password tidak boleh kosong");
+                }else if (mnim.getText().toString().trim().equalsIgnoreCase("admin")
+                        && mpass.getText().toString().trim().equalsIgnoreCase("admin")){
                     Intent loginIntent = new Intent(LoginActivity.this, HomeActivity.class);
                     startActivity(loginIntent);
-                }else {
-                    Toast.makeText(LoginActivity.this,
-                            "Your NIM or Password is incorrect", Toast.LENGTH_SHORT).show();
+                    finish();
+                }else{
+                    Toast.makeText(LoginActivity.this, "Your NIM or Password is Incorrect", Toast.LENGTH_SHORT).show();
                 }
             }
         });
 
     }
-
-    //public void login(View view) {
-    //Intent loginIntent = new Intent(LoginActivity.this, HomeActivity.class);
-    //startActivity(loginIntent);
-    //}
 
     public void forgetPass(View view) {
         Intent forgetIntent = new Intent(LoginActivity.this, ForgetPassword.class);

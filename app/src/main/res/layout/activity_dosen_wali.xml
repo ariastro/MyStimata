@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context="com.example.astro.mystimata.DosenWali">
+    tools:context="com.example.astronout.mystimata.DosenWali">
 
     <RelativeLayout
         android:layout_width="match_parent"

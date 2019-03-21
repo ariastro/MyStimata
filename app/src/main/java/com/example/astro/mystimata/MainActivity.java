@@ -24,9 +24,5 @@ public class MainActivity extends AppCompatActivity {
             }
         },SPLASH_TIME_OUT);
 
-        font = (TextView) findViewById(R.id.mystimata);
-        Typeface myCustomFont = Typeface.createFromAsset(getAssets(),"fonts/Sweet Sensations Personal Use.ttf");
-        font.setTypeface(myCustomFont);
-
     }
 }
